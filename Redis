@@ -1,0 +1,10 @@
+In-memory key-value NoSQL DB.
+
+Life cycle: 1. Jedis connection pool, 2. Connection (is obtained in the pool.getResource()statement), 3. Request life cycle
+
+Data types in Redis: String, Hashes, Lists, Sets and Sorted Sets.
+
+Functions in the Redis Server: Real time messaging (Publish/Subscribe), Pipeline, Transaction, Scripting and Connection management
+
+Reference Book: http://file.allitebooks.com/20150807/Learning%20Redis.pdf
+
