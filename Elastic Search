@@ -1,0 +1,15 @@
+Elastic Search:
+
+1. Cluster : collection of nodes
+2. Node: collection of indexs
+3. Index: each node contains a index
+5. Shard: its a lucene index
+5. Lucene Index: Full text search library
+6. Segments: in lucene Indexa segments are presents it also called mini indexs, contains some data stucture(field, doc. value etc.)
+7. Inverted Index: it is a key of the data structure, it contains a two part. a. A sorted dictionary which contans the index terms and for every term has postings list which is the document containing the term.
+8. Search will happen in each segment of shard than results aggrigate of each segments than each segment reslut will aggriget with each shard, same way all node result will be aggrigate and sent to the network.
+9. Segment is unmutable and if we delete dictionary values from a segments, the two smaller segments will marge automatically.
+10. the search cost be same of searching from two nodes containing a shard and a nde with two shards.
+
+Search Prefix with a letter: Use binary search
+search for term: use trem query which is costally operation 
